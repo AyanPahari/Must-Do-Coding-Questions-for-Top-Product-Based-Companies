@@ -29,7 +29,7 @@ int32_t main()
     {
         for (int j = 0; j < e; j++) // traversing the entire edge list
         {
-            if (dist[edges[j].v] > dist[edges[j].u] + edges[j].wt)
+            if (dist[edges[j].u] < inf && dist[edges[j].v] > dist[edges[j].u] + edges[j].wt)
             {
                 if (i == n - 1) // if values are still changing in the n-1 phase, that indicates the presence of negative weight cycle
                 {

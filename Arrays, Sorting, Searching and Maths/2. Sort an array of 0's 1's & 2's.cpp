@@ -40,7 +40,7 @@ class Solution
 public:
     //using dutch national flag algorithm
     //time: O(n)
-    //space: O(n)
+    //space: O(1)
     void sortColors(vector<int> &nums)
     {
         int n = nums.size();
